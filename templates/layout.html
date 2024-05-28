@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+    <link rel="shortcut icon" href="static/imagenes/ind.ico" type="image/x-icon">
+    <title>Huella Libre&#128062;</title>
+</head>
+<header>
+    <img id="por" src="{{ url_for('static', filename='imagenes/huellapp.gif') }}" width="85px" height="85px" >
+    <h1 id="t1" class="centrado">Huella Libre&#128062;</h1>
+    <p class="parra">En Huella Libre somos especialistas en el cuidado de todos tipos de animales;más que ofrecer una mascota les brindamos una familia.<3</p>
+</header>
+<body>
+    
+<nav>
+    <ul>
+        <li><a href="/index" target="_blank">Inicio</a></li>
+        <li><a href="/animal1" target="_blank">Mapache</a></li>
+        <li><a href="/animal2" target="_blank">Ardilla</a></li>
+        <li><a href="/animal3" target="_blank">Capibara</a></li>
+        <li><a href="/formulario" target="_blank">Contactanos</a></li>
+
+    </ul>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <a id="ref" href="mailto:22301061550051@cetis155.edu.mx">Contactanos</a>
+
+</footer>
+
+</body>
+</html>

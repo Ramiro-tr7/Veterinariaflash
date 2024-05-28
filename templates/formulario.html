@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="main" >
+    
+<section class="articles">
+        <article>
+            <form action="/agrega_comenta" method="post">
+                <div class="container">
+                    <div class="form-row">
+                            <div class="col-xs-12 ">
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Escribe aqui tu correo electronico</label>
+                                <input type="email" class="form-control" name="correo" id="correo" placeholder="nombre@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="comentarios" class="form-label">Escribe tu mensaje</label>
+                                <input type="text" class="form-control" name="comentarios" id="comentarios"></input>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                    <button type="submit" id="botones"  class="btn btn-primary">Enviar</button>
+            </form>   
+       </article>
+
+</section>  
+</section> 
+<aside>
+
+    <section class="imagenes">
+        <img src="static/imagenes/huella.gif" width="185px" height="185px">
+        <img id="ip2" src="static/imagenes/perrito.png" width="285px" height="185px">
+    </section>
+    
+      
+</aside>
+{% endblock %}
